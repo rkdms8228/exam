@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>자바스크립트</h1>
+
+	<h2>이벤트(~할 때)</h2>
+	
+	<div>
+		<button id="btn" type="button">테스트 버튼</button>
+		<h3 id="display"><font color="#ff0000">이름 출력 영역</font></h3>
+	</div>
+	
+</body>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			
+			var testButton = document.getElementById("btn");	//id = btn DOM -> 자바스크립트 객체화
+			
+			var testArea = document.getElementById("display");	//id = display DOM -> 자바스크립트 객체화
+			
+			testButton.onclick = function() {
+				
+				console.log("버튼 클릭");
+	            testArea.innerHTML = "왕";
+	            
+			}
+			
+		};
+	</script>
+
+</html>
