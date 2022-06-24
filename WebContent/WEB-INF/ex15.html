@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>자바스크립트</h1>
+
+	<h2>객체</h2>
+
+</body>
+
+	<script type="text/javascript">
+		//var array = [];
+		var guestbookVo = {
+				name: "김가은",
+				password: "1234",
+				content: "hi",
+				showInfo: function() {
+					console.log(this.name);
+					console.log(this.password);
+					console.log(this.content);
+				}
+		};
+		
+		console.log(guestbookVo);
+		
+		var name = guestbookVo.name;
+		console.log(name);
+		
+		var password = guestbookVo.password;
+		console.log(password);
+		
+		var content = guestbookVo.content;
+		console.log(content);
+		
+		//showInfo 실행
+		guestbookVo.showInfo();
+		
+		////////////////////////////////////////////////////////////////////////////
+		
+		var personVo01 = {
+				name: "김가은",
+				hp: "010-8563-8228",
+				company: "02-8563-8228"
+		};
+		
+		console.log(personVo01);
+		
+		////////////////////////////////////////////////////////////////////////////
+		
+		var personVo02 = {
+				name: "한소희",
+				hp: "010-0000-0000"
+		};
+		
+		console.log(personVo02);
+		
+		personVo02.company="02-9999-9999";
+		personVo02.age = 27; //의도하지 않은 거면 주의
+		console.log(personVo02);
+		
+		////////////////////////////////////////////////////////////////////////////
+
+		var personVo03 = {};
+		personVo03.name = "강동원";
+		personVo03.hp = "010-1111-1111";
+		personVo03.company = "02-2222-2222";
+		
+		console.log(personVo03);
+	</script>
+
+</html>
