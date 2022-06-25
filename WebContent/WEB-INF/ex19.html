@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<style type="text/css">
+		table {
+		    border-spacing: 0px;
+		    border-style: none;
+		    padding: 33px;}
+		td {
+		    border-spacing: 0px;
+		    border-style: none;
+		    padding: 3px;}
+		input {
+			width:270px;
+			height:50px;
+		}
+		button {
+			padding: 25px;
+			border: 1px solid #0099FF;
+			background-color: #99CCFF;
+			color: black;
+			width:65px;
+			border-radius: 17%;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>자바스크립트</h1>
+	
+	<h2>계산기</h2>
+	
+	<table border="1">
+		<tr>
+			<td colspan="4">
+				<input type="text" id="display">
+			</td>
+		</tr>
+		<tr>
+			<td><button id="seven" type="button">7</button></td>
+			<td><button id="eight" type="button">8</button></td>
+			<td><button id="nine" type="button">9</button></td>
+			<td><button id="multi" type="button">*</button></td>
+		</tr>
+		<tr>
+			<td><button id="four" type="button">4</button></td>
+			<td><button id="five" type="button">5</button></td>
+			<td><button id="six" type="button">6</button></td>
+			<td><button id="subtract" type="button">-</button></td>
+		</tr>
+		<tr>
+			<td><button id="one" type="button">1</button></td>
+			<td><button id="two" type="button">2</button></td>
+			<td><button id="three" type="button">3</button></td>
+			<td><button id="add" type="button">+</button></td>
+		</tr>
+		<tr>
+			<td><button id="zero" type="button">0</button></td>
+			<td><button id="reset" type="button">AC</button></td>
+			<td><button id="divide" type="button">/</button></td>
+			<td><button id="sum" type="button">=</button></td>
+		</tr>
+	</table>
+	
+</body>
+
+<script type="text/javascript">
+	window.onload = function() {
+		
+		var one = document.getElementById("one");
+		var two = document.getElementById("two");
+		var three = document.getElementById("three");
+		var four = document.getElementById("four");
+		var five = document.getElementById("five");
+		var six = document.getElementById("six");
+		var seven = document.getElementById("seven");
+		var eight = document.getElementById("eight");
+		var nine = document.getElementById("nine");
+		var divide = document.getElementById("divide");
+		var multi = document.getElementById("multi");
+		var subtract = document.getElementById("subtract");
+		var reset = document.getElementById("reset");
+		var sum = document.getElementById("sum");
+		var add = document.getElementById("add");
+		var zero = document.getElementById("zero");
+		var display = document.getElementById("display");
+		
+		zero.onclick = function(){
+			console.log("0");
+		}
+		one.onclick = function(){
+			console.log("1");
+		}
+		two.onclick = function(){
+			console.log("2");
+		}
+		three.onclick = function(){
+			console.log("3");
+		}
+		four.onclick = function(){
+			console.log("4");
+		}
+		five.onclick = function(){
+			console.log("5");
+		}
+		six.onclick = function(){
+			console.log("6");
+		}
+		seven.onclick = function(){
+			console.log("7");
+		}
+		eight.onclick = function(){
+			console.log("8");
+		}
+		nine.onclick = function(){
+			console.log("9");
+		}
+		divide.onclick = function(){
+			console.log("/");
+		}
+		multi.onclick = function(){
+			console.log("*");
+		}
+		subtract.onclick = function(){
+			console.log("-");
+		}
+		reset.onclick = function(){
+			console.log("AC");
+		}
+		sum.onclick = function(){
+			console.log("=");
+		}
+		add.onclick = function(){
+			console.log("+");
+		}
+		
+	}
+</script>
+
+</html>
