@@ -41,29 +41,28 @@
 			</td>
 		</tr>
 		<tr>
-			<td><button id="seven" type="button">7</button></td>
-			<td><button id="eight" type="button">8</button></td>
-			<td><button id="nine" type="button">9</button></td>
-			<td><button id="multi" type="button">*</button></td>
+			<td><button id="seven"  value="7">7</button></td>
+			<td><button id="eight"  value="8">8</button></td>
+			<td><button id="nine"  value="9">9</button></td>
+			<td><button id="multi" value="*">*</button></td>
 		</tr>
 		<tr>
-			<td><button id="four" type="button">4</button></td>
-			<td><button id="five" type="button">5</button></td>
-			<td><button id="six" type="button">6</button></td>
-			<td><button id="subtract" type="button">-</button></td>
+			<td><button id="four" value="4">4</button></td>
+			<td><button id="five" value="5">5</button></td>
+			<td><button id="six" value="6">6</button></td>
+			<td><button id="subtract" value="-">-</button></td>
 		</tr>
 		<tr>
-			<td><button id="one" type="button">1</button></td>
-			<td><button id="two" type="button">2</button></td>
-			<td><button id="three" type="button">3</button></td>
-			<td><button id="add" type="button">+</button></td>
+			<td><button id="one" value="1">1</button></td>
+			<td><button id="two" value="2">2</button></td>
+			<td><button id="three" value="3">3</button></td>
+			<td><button id="add"value="+">+</button></td>
 		</tr>
 		<tr>
-			<td><button id="zero" type="button">0</button></td>
-			<td><button id="reset" type="button">AC</button></td>
-			<td><button id="divide" type="button">/</button></td>
-			<td><button id="sum" type="button">=</button></td>
-		</tr>
+			<td><button id="zero" value="0">0</button></td>
+			<td><button id="reset" value="AC">AC</button></td>
+			<td><button id="divide" value="/">/</button></td>
+			<td><button id="sum" value="=">=</button></td>
 	</table>
 	
 </body>
@@ -90,52 +89,52 @@
 		var display = document.getElementById("display");
 		
 		zero.onclick = function(){
-			console.log("0");
+			display.value += zero.value;
 		}
 		one.onclick = function(){
-			console.log("1");
+			display.value += one.value;
 		}
 		two.onclick = function(){
-			console.log("2");
+			display.value += two.value;
 		}
 		three.onclick = function(){
-			console.log("3");
+			display.value += three.value;
 		}
 		four.onclick = function(){
-			console.log("4");
+			display.value += four.value;
 		}
 		five.onclick = function(){
-			console.log("5");
+			display.value += five.value;
 		}
 		six.onclick = function(){
-			console.log("6");
+			display.value += six.value;
 		}
 		seven.onclick = function(){
-			console.log("7");
+			display.value += seven.value;
 		}
 		eight.onclick = function(){
-			console.log("8");
+			display.value += eight.value;
 		}
 		nine.onclick = function(){
-			console.log("9");
+			display.value += nine.value;
 		}
 		divide.onclick = function(){
-			console.log("/");
+			display.value += divide.value;
 		}
 		multi.onclick = function(){
-			console.log("*");
+			display.value += multi.value;
 		}
 		subtract.onclick = function(){
-			console.log("-");
+			display.value += subtract.value;
 		}
 		reset.onclick = function(){
-			console.log("AC");
+			display.value = "";
 		}
 		sum.onclick = function(){
-			console.log("=");
+			display.value = eval(display.value);
 		}
 		add.onclick = function(){
-			console.log("+");
+			display.value += add.value;
 		}
 		
 	}
